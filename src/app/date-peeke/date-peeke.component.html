@@ -1,0 +1,12 @@
+<div class="container">
+  <em>My Task Calender</em>
+
+  <div class="calender-div">
+    <mat-card>
+      <mat-calendar
+        (selectedChange)="onDateSelected($event)"
+        [ngClass]="{ 'date-selected': selected }"
+      ></mat-calendar>
+    </mat-card>
+  </div>
+</div>
